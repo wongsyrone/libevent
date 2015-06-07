@@ -2,7 +2,7 @@ version: 2.1.5.{build}
 shallow_clone: true
 
 #os: Visual Studio 2015 RC
-od: Windows Server 2012 R2
+os: Windows Server 2012 R2
 
 #build:
 #         verbosity: detailed
