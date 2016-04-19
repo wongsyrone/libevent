@@ -28,12 +28,23 @@
 /* #undef _EVENT_DISABLE_THREAD_SUPPORT */
 
 /* Define to 1 if you have the `arc4random' function. */
-#if !defined(__aarch64__) && !defined(__x86_64__)
+/* #if !defined(__aarch64__) && !defined(__x86_64__)
 #define _EVENT_HAVE_ARC4RANDOM 1
-#endif
+#endif */
+
+/* The real define used when compiling
+ * android-21 has these two funcs
+ */
+#define _EVENT_HAVE_ARC4RANDOM 1
+
 
 /* Define to 1 if you have the `arc4random_buf' function. */
-#define _EVENT_HAVE_ARC4RANDOM_BUF
+/* #define _EVENT_HAVE_ARC4RANDOM_BUF */
+
+/* The real define used when compiling
+ * android-21 has these two funcs
+ */
+#define _EVENT_HAVE_ARC4RANDOM_BUF 1
 
 /* Define to 1 if you have the <arpa/inet.h> header file. */
 #define _EVENT_HAVE_ARPA_INET_H 1
